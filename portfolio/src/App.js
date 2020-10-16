@@ -8,8 +8,10 @@ import {
   Route,
   Link
 } from "react-router-dom"
+import Projects from './Components/Projects';
+import Home from './Components/Home';
 
-function App() {
+export default function App() {
   return (
     <div>
       <header className="App">
@@ -21,15 +23,13 @@ function App() {
               {/* <Resume /> */}
             </Route>
             <Route path="/projects">
-              {/* <Projects /> */}
+              <Projects />
             </Route>
             <Route path="/">
-              {/* <Home /> */}
+              <Home />
             </Route>
           </Switch>
       </main>
     </div>
   );
 }
-
-export default App;
