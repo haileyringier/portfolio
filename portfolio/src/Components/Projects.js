@@ -28,37 +28,29 @@ export default function Projects(){
     const classes = useStyles();
 
     return(
-//         <div className='project-section'>
-//             <p>My Projects</p>
-//         <Grid container spacing={4}>
-//             
-//             </Grid>
-//             <Grid item xs={4}>
-//                 
-//             </Grid>
-//         </Grid>
-//         </div>
-//     )
-// }
-<Grid>
-<Card className={classes.root}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          alt="Productivity Journal dashboard"
-          height="140"
-          image="../Pictures/Dashboard.png"
-          title="Productivity Journal"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            Flappy Bird
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            Remake of the popular game Flappy Bird using React.
-          </Typography>
-        </CardContent>
-      </CardActionArea>
+        <div className='project-section'>
+            <p>My Projects</p>
+        <Grid container spacing={4}>
+            <Grid item xs={5}>
+                <Card className={classes.root}>
+                <CardActionArea>
+                    <CardMedia
+                    //   component="img"
+                    //   alt="Productivity Journal dashboard"
+                    //   height="140"
+                    //   image="../Pictures/Dashboard.png"
+                    //   title="Productivity Journal"
+                    />
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/khRLEv3OAQg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             <CardContent>
+                <Typography gutterBottom variant="h5" component="h2">
+                    Flappy Bird
+                </Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                    Remake of the popular game Flappy Bird using React.
+                </Typography>
+            </CardContent>
+        </CardActionArea>
       <CardActions>
         <Button size="small" color="primary">
           Github
@@ -68,15 +60,12 @@ export default function Projects(){
         </Button>
       </CardActions>
     </Card>
-    <Card className={classes.root}>
+    </Grid>
+    <Grid item>
+<Card className={classes.root}> 
     <CardActionArea>
-      <CardMedia
-        component="img"
-        alt="Productivity Journal dashboard"
-        height="140"
-        image="/Users/haileyringier/Projects/portfolio/portfolio/Pictures/Dashboard.png"
-        title="Productivity Journal"
-      />
+      <CardMedia/>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/R86OtlYwovU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <CardContent>
         <Typography gutterBottom variant="h5" component="h2">
           Productivity Journal
@@ -96,6 +85,8 @@ export default function Projects(){
       </Button>
     </CardActions>
   </Card>
+    </Grid>
   </Grid>
+  </div>
     )
 }
