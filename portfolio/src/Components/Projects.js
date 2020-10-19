@@ -23,10 +23,16 @@ export default function Projects(){
             <p>My Projects</p>
         <Grid container spacing={3}>
             <Grid item >
-                <Paper className={classes.paper}>Flappy Bird</Paper>
+                <Paper className={classes.paper}>
+                    <h3>Flappy Bird</h3>
+                    <img></img>
+                </Paper>
             </Grid>
             <Grid item>
-                <Paper className={classes.paper}>Productivity Journal</Paper>
+                <Paper className={classes.paper}>
+                    <h3>Productivity Journal</h3>
+                    <img></img>
+                </Paper>
             </Grid>
                 
 

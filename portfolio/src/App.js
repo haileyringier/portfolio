@@ -9,26 +9,19 @@ import {
   Link
 } from "react-router-dom"
 import Projects from './Components/Projects';
-import Home from './Components/Home';
+import Picture from './Components/Picture';
+import ContactCard from './Components/ContactCard'
 
 export default function App() {
   return (
     <div>
       <header className="App">
-        <NavBar />
+        {/* <NavBar /> */}
       </header>
       <main>
-        <Switch>
-            <Route path="/resume">
-              {/* <Resume /> */}
-            </Route>
-            <Route path="/projects">
-              <Projects />
-            </Route>
-            <Route path="/">
-              <Home />
-            </Route>
-          </Switch>
+        <AboutSection />
+        <Projects />
+        <ContactCard />
       </main>
     </div>
   );
