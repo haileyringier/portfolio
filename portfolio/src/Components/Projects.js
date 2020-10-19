@@ -11,6 +11,7 @@ const useStyles = makeStyles((theme) => ({
       padding: theme.spacing(2),
       textAlign: 'center',
       color: theme.palette.text.secondary,
+      height: '100%',
     },
   }));
 
@@ -19,18 +20,30 @@ export default function Projects(){
     const classes = useStyles();
 
     return(
-        <div>
+        <div className='project-section'>
             <p>My Projects</p>
-        <Grid container spacing={3}>
-            <Grid item >
+        <Grid container spacing={4}>
+            <Grid item xs={4}>
                 <Paper className={classes.paper}>
                     <h3>Flappy Bird</h3>
+                    <ul>
+                        <li>React</li>
+                        <li>HTML</li>
+                        <li>classes</li>
+                    </ul>
                     <img></img>
                 </Paper>
             </Grid>
-            <Grid item>
+            <Grid item xs={4}>
                 <Paper className={classes.paper}>
                     <h3>Productivity Journal</h3>
+                    <ul>
+                        <li>React</li>
+                        <li>Material-UI</li>
+                        <li>Chart.js</li>
+                        <li>Node</li>
+                        <li>Express</li>
+                    </ul>
                     <img></img>
                 </Paper>
             </Grid>
